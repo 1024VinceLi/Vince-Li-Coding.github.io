@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>字典集合常用方法 · GitBook</title>
+        <title>列表常用函数 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="字符串操作.html" />
+    <link rel="next" href="字典集合常用方法.html" />
     
     
-    <link rel="prev" href="列表常用函数.html" />
+    <link rel="prev" href="./" />
     
 
     </head>
@@ -103,7 +103,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.1.1" data-path="列表常用函数.html">
+        <li class="chapter active" data-level="1.1.1" data-path="列表常用函数.html">
             
                 <a href="列表常用函数.html">
             
@@ -116,7 +116,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.1.2" data-path="字典集合常用方法.html">
+        <li class="chapter " data-level="1.1.2" data-path="字典集合常用方法.html">
             
                 <a href="字典集合常用方法.html">
             
@@ -294,7 +294,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >字典集合常用方法</a>
+        <a href="." >列表常用函数</a>
     </h1>
 </div>
 
@@ -309,42 +309,31 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x96C6;&#x5408;&#x5E38;&#x7528;&#x65B9;&#x6CD5;">&#x96C6;&#x5408;&#x5E38;&#x7528;&#x65B9;&#x6CD5;</h1>
-<h2 id="adddata">add(data)</h2>
-<p><strong>&#x6DFB;&#x52A0;</strong> data:&#x52A0;&#x5165;&#x5230;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x6570;&#x636E;</p>
-<p><code>set1.add(&quot;hello&quot;)</code></p>
+                                <h1 id="&#x5217;&#x8868;&#x5143;&#x7EC4;&#x5E38;&#x7528;&#x65B9;&#x6CD5;">&#x5217;&#x8868;(&#x5143;&#x7EC4;)&#x5E38;&#x7528;&#x65B9;&#x6CD5;</h1>
+<h2 id="appenddata">append(data)</h2>
+<p><strong>&#x8FFD;&#x52A0;</strong> &#x5C06;&#x53C2;&#x6570;data&#x8FFD;&#x52A0;&#x5230;&#x5217;&#x8868;&#x672B;&#x5C3E;,&#x4E0D;&#x7BA1;data&#x662F;&#x4E2A;&#x4EC0;&#x4E48;&#x73A9;&#x610F;&#x90FD;&#x5F53;&#x505A;&#x5143;&#x7D20;&#x5BF9;&#x5F85;<code>list.append(data)</code></p>
+<h2 id="extendmodel">extend(model)</h2>
+<p><strong>&#x5408;&#x5E76;</strong> &#x5C06;&#x4E24;&#x4E2A;&#x5217;&#x8868;&#x5408;&#x5E76;&#x6210;&#x4E00;&#x4E2A;&#x5217;&#x8868;,&#x53C2;&#x6570;&#x4E3A;&#x6570;&#x636E;&#x5B58;&#x50A8;&#x7ED3;&#x6784;&#x4F60;&#x80FD;&#x4E3A;&#x5355;&#x4E2A;&#x6570;&#x636E;</p>
+<p> <code>list1.extend(list2)</code></p>
+<p>&#x7ED3;&#x679C;&#x653E;&#x5728;&#x7B2C;&#x4E00;&#x4E2A;&#x5217;&#x8868;&#x4E2D;</p>
+<h2 id="insertindex-data">insert(index, data)</h2>
+<p>&#x5728;&#x5217;&#x8868;&#x6307;&#x5B9A;&#x7D22;&#x5F15;&#x51FA;&#x63D2;&#x5165;&#x6570;&#x636E;</p>
 <h2 id="removedata">remove(data)</h2>
-<p><strong>&#x5220;&#x9664;</strong> data:&#x8981;&#x4ECE;&#x96C6;&#x5408;&#x4E2D;&#x5220;&#x9664;&#x7684;&#x6570;&#x636E;</p>
-<p><code>set1.remove(&quot;hello&quot;)</code></p>
-<h1 id="pop">pop()</h1>
-<p><strong>&#x5F39;&#x51FA;</strong> &#x4ECE;&#x96C6;&#x5408;&#x4E2D;&#x83B7;&#x53D6;&#x5E76;&#x5220;&#x9664;&#x7B2C;&#x4E00;&#x4E2A;&#x6570;&#x636E;</p>
-<p><code>set1.pop()</code></p>
-<h1 id="&#x5B57;&#x5178;&#x5E38;&#x7528;&#x65B9;&#x6CD5;">&#x5B57;&#x5178;&#x5E38;&#x7528;&#x65B9;&#x6CD5;</h1>
-<h2 id="popkey">pop(key)</h2>
-<p><strong>&#x5F39;&#x51FA;</strong> &#x4ECE;&#x5B57;&#x5178;&#x4E2D;&#x5220;&#x9664;&#x6307;&#x5B9A;&#x952E;key&#x5BF9;&#x5E94;&#x7684;&#x952E;&#x503C;&#x5BF9;&#xFF0C;</p>
-<p>&#x5982;&#x679C;&#x952E;key&#x4E0D;&#x5B58;&#x5728;&#x5C06;&#x62A5;&#x9519;</p>
-<p><code>dict1.pop(&quot;hello&quot;)</code></p>
-<p><strong>&#x8FD4;&#x56DE;&#x503C;:&#x88AB;&#x5220;&#x9664;&#x7684;&#x503C;value</strong></p>
-<h2 id="popitem">popitem()</h2>
-<p><strong>&#x5F39;&#x51FA;</strong> &#x4ECE;&#x5B57;&#x5178;&#x4E2D;&#x5220;&#x9664;&#x6307;&#x5B9A;&#x952E;key&#x5BF9;&#x5E94;&#x7684;&#x952E;&#x503C;&#x5BF9;&#xFF0C;&#x5982;&#x679C;&#x952E;key&#x4E0D;&#x5B58;&#x5728;&#x5C06;&#x62A5;&#x9519;</p>
-<p><code>dict1.popitem(&quot;hello&quot;)</code></p>
-<p><strong>&#x8FD4;&#x56DE;&#x503C;:&#x88AB;&#x5220;&#x9664;&#x7684;&#x952E;&#x503C;&#x5BF9;</strong></p>
-<h2 id="getkey">get(key)</h2>
-<p>&#x6839;&#x636E;&#x952E;key&#x67E5;&#x8BE2;&#x5B57;&#x5178;&#x4E2D;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#xFF0C;&#x5982;&#x679C;&#x952E;key&#x4E0D;&#x5B58;&#x5728;&#x5C06;&#x8FD4;&#x56DE;None</p>
-<p><code>dict1.get(&quot;hello&quot;)</code></p>
-<p><strong>&#x8FD4;&#x56DE;&#x503C;&#x6839;&#x636E;&#x952E;key&#x5728;&#x5B57;&#x5178;&#x4E2D;&#x67E5;&#x8BE2;&#x5230;&#x7684;&#x503C;value</strong></p>
-<h2 id="keys">keys()</h2>
-<p><strong>&#x83B7;&#x53D6;&#x952E;&#x5217;&#x8868;</strong>  &#x83B7;&#x53D6;&#x5B57;&#x5178;&#x4E2D;&#x6240;&#x6709;&#x7684;&#x952E;key&#x7EC4;&#x6210;&#x7684;&#x5217;&#x8868;&#x6570;&#x636E;</p>
-<p>&#x8FD4;&#x56DE;&#x503C;:<strong>&#x7531;&#x6240;&#x6709;&#x952E;&#x7EC4;&#x6210;&#x7684;&#x5217;&#x8868;</strong></p>
-<h2 id="value">value()</h2>
-<p><strong>&#x83B7;&#x53D6;&#x503C;&#x5217;&#x8868;</strong> &#x83B7;&#x53D6;&#x5B57;&#x5178;&#x4E2D;&#x6240;&#x6709;&#x7684;&#x503C;value&#x7EC4;&#x6210;&#x7684;&#x5217;&#x8868;&#x6570;&#x636E;</p>
-<p>&#x8FD4;&#x56DE;&#x503C;:<strong>&#x7531;&#x6240;&#x6709;&#x503C;&#x7EC4;&#x6210;&#x7684;&#x5217;&#x8868;</strong></p>
-<h2 id="tems">tems()</h2>
-<p><strong>&#x83B7;&#x53D6;&#x952E;&#x503C;&#x5BF9;&#x5217;&#x8868;</strong> &#x83B7;&#x53D6;&#x5B57;&#x5178;&#x4E2D;&#x6240;&#x6709;&#x7684;&#x952E;&#x503C;&#x5BF9;&#x5217;&#x8868;&#x6570;&#x636E;</p>
-<p><code>dict1.items()</code></p>
-<p>&#x8FD4;&#x56DE;&#x503C;&#x4E3A;:<strong>&#x7531;&#x952E;&#x503C;&#x5BF9;&#x7EC4;&#x6210;&#x7684;&#x5217;&#x8868;&#xFF0C;&#x952E;&#x503C;&#x5BF9;&#x7684;&#x683C;&#x5F0F;&#x662F;&#x5143;&#x7EC4;&#x6570;&#x636E;</strong></p>
-<p><code>[(1 : &quot;1&quot; ),( 2 : &quot;2&quot; ),( 3 : &quot;3&quot; )]</code></p>
-<p><strong>&#x5B57;&#x5178;&#x6570;&#x636E;&#x5904;&#x7406;&#x6BD4;&#x8F83;&#x56F0;&#x96BE;,&#x4F7F;&#x7528;&#x6B64;&#x65B9;&#x6CD5;&#x8F6C;&#x6362;&#x540E;&#x5C31;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5217;&#x8868;&#x65B9;&#x6CD5;&#x5904;&#x7406;&#x4E86;</strong></p>
+<p><strong>&#x5220;&#x9664;</strong> &#x4ECE;&#x5217;&#x8868;&#x4E2D;&#x5220;&#x9664;&#x6307;&#x5B9A;&#x7684;&#x6570;&#x636E;&#xFF0C;</p>
+<p><code>list1.remove(&quot;hello&quot;)</code></p>
+<p><strong>&#x5982;&#x679C;&#x6570;&#x636E;&#x4E0D;&#x5B58;&#x5728;&#x5C06;&#x62A5;&#x9519;</strong></p>
+<h2 id="popindex">pop(index)</h2>
+<p><strong>&#x5F39;&#x51FA;</strong> &#x4ECE;&#x5217;&#x8868;&#x4E2D;&#x83B7;&#x53D6;&#x5E76;&#x5220;&#x9664;&#x6307;&#x5B9A;&#x7D22;&#x5F15;&#x4F4D;&#x7F6E;&#x4E0A;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5982;&#x679C;&#x7D22;&#x5F15;&#x503C;&#x8D85;&#x8FC7;&#x5217;&#x8868;&#x6570;&#x636E;&#x603B;&#x91CF;&#x5C06;&#x62A5;&#x9519;</p>
+<p><code>data =list1.pop(1)</code></p>
+<p>&#x8FD4;&#x56DE;&#x503C;&#x4E3A;&#x83B7;&#x53D6;&#x5230;&#x7684;&#x5143;&#x7D20;</p>
+<h2 id="indexdata">index(data)</h2>
+<p><strong>&#x83B7;&#x53D6;&#x7D22;&#x5F15;</strong> &#x67E5;&#x8BE2;&#x5217;&#x8868;&#x4E2D;&#x6307;&#x5B9A;&#x6570;&#x636E;&#x5BF9;&#x5E94;&#x7684;&#x7D22;&#x5F15;&#xFF0C;<strong>&#x5982;&#x679C;&#x6570;&#x636E;&#x4E0D;&#x5B58;&#x5728;&#x5C06;&#x62A5;&#x9519;</strong></p>
+<p>&#x8FD4;&#x56DE;&#x503C;&#x4E3A;&#x8FD9;&#x4E2A;&#x6570;&#x636E;&#x7B2C;&#x4E00;&#x6B21;&#x51FA;&#x73B0;&#x7684;&#x7D22;&#x5F15;</p>
+<p><strong>(&#x5143;&#x7EC4;&#x53EF;&#x7528;)</strong></p>
+<h2 id="countdata">count(data)</h2>
+<p><strong>&#x8BA1;&#x6570;</strong> &#x7EDF;&#x8BA1;&#x5217;&#x8868;&#x4E2D;&#x6307;&#x5B9A;&#x6570;&#x636E;&#x51FA;&#x73B0;&#x7684;&#x6570;&#x91CF;</p>
+<p>&#x8FD4;&#x56DE;&#x503C;&#x4E3A;int&#x578B;</p>
+<p><strong>(&#x5143;&#x7EC4;&#x53EF;&#x7528;)</strong></p>
 
                                 
                                 </section>
@@ -372,12 +361,12 @@
 
             
                 
-                <a href="列表常用函数.html" class="navigation navigation-prev " aria-label="Previous page: 列表常用函数">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: python基础">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="字符串操作.html" class="navigation navigation-next " aria-label="Next page: 字符串操作">
+                <a href="字典集合常用方法.html" class="navigation navigation-next " aria-label="Next page: 字典集合常用方法">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -388,7 +377,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"字典集合常用方法","level":"1.1.2","depth":2,"next":{"title":"字符串操作","level":"1.1.3","depth":2,"path":"字符串操作.md","ref":"字符串操作.md","articles":[]},"previous":{"title":"列表常用函数","level":"1.1.1","depth":2,"path":"列表常用函数.md","ref":"列表常用函数.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"字典集合常用方法.md","mtime":"2019-03-10T14:28:46.343Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-13T11:30:50.174Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"列表常用函数","level":"1.1.1","depth":2,"next":{"title":"字典集合常用方法","level":"1.1.2","depth":2,"path":"字典集合常用方法.md","ref":"字典集合常用方法.md","articles":[]},"previous":{"title":"python基础","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[{"title":"列表常用函数","level":"1.1.1","depth":2,"path":"列表常用函数.md","ref":"列表常用函数.md","articles":[]},{"title":"字典集合常用方法","level":"1.1.2","depth":2,"path":"字典集合常用方法.md","ref":"字典集合常用方法.md","articles":[]},{"title":"字符串操作","level":"1.1.3","depth":2,"path":"字符串操作.md","ref":"字符串操作.md","articles":[]},{"title":"可变类型与不可变类型","level":"1.1.4","depth":2,"path":"可变类型与不可变类型.md","ref":"可变类型与不可变类型.md","articles":[]},{"title":"单例模式","level":"1.1.5","depth":2,"path":"单例模式.md","ref":"单例模式.md","articles":[]},{"title":"文件操作","level":"1.1.6","depth":2,"path":"文件操作.md","ref":"文件操作.md","articles":[]},{"title":"异常处理","level":"1.1.7","depth":2,"path":"异常处理.md","ref":"异常处理.md","articles":[]},{"title":"模块运行代码管理","level":"1.1.8","depth":2,"path":"模块运行代码管理.md","ref":"模块运行代码管理.md","articles":[]},{"title":"时间与日期","level":"1.1.9","depth":2,"path":"时间与日期.md","ref":"时间与日期.md","articles":[]},{"title":"刷题_基础部分","level":"1.1.10","depth":2,"path":"刷题_基础部分.md","ref":"刷题_基础部分.md","articles":[]},{"title":"错题本","level":"1.1.11","depth":2,"path":"错题本.md","ref":"错题本.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"列表常用函数.md","mtime":"2019-03-12T01:22:09.845Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-13T11:30:50.174Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
